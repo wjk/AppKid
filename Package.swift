@@ -542,9 +542,9 @@ extension Target {
     static let cClang: Target = systemLibrary(
         name: "CClang",
         path: "Volcano/Sources/CClang",
-        pkgConfig: "clang",
+        pkgConfig: "libclang-14",
         providers: [
-            .apt(["libclang-15-dev"]),
+            .apt(["libclang-14"]),
         ]
     )
     static let volcano: Target = target(

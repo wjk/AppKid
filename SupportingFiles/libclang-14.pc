@@ -1,0 +1,13 @@
+prefix=/usr/lib/llvm-14
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+
+Name: libclang-14
+Description: LLVM Libclang
+Version: 14.0.0
+URL: http://www.llvm.org/
+Requires:
+Conflicts:
+Libs: -L${libdir} -lclang-14
+Cflags: -I${includedir}

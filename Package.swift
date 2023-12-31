@@ -401,9 +401,9 @@ extension Target {
         // exclude: [
         //     "Resources/Shaders",
         // ],
-        // resources: [
-        //     .process("Resources/Shaders"),
-        // ],
+        resources: [
+            .process("Resources/Shaders"),
+        ],
         swiftSettings: .emitModule,
         plugins: .volcanoSL
     )

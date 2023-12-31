@@ -344,8 +344,6 @@ internal let timeoutLimit: TimeInterval = 0
         }
 
         fileprivate func actualRun(in mode: RunLoopMode, name: Mode, duration: TimeInterval, stopAfterHandle: Bool, previousMode: RunLoopMode?) throws -> RunResult {
-            let startTSR: UInt64 = .absoluteTime
-
             var dispatchMainQueuePort: OSPort? = nil
             let isMainThread = OSNativeThread.isMain
 

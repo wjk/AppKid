@@ -8,7 +8,6 @@
 import Spoon
 import SystemPackage
 import LinuxSys
-import TinyFoundation
 import Foundation
 
 fileprivate struct ForkMetadata {

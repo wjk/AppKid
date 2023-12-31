@@ -51,8 +51,7 @@ public final class Instance: SharedPointerStorage<VkInstance_T> {
     public init(extensions: Set<InstanceExtension> = []) {
         do {
             let vulkanVersion: CUnsignedInt = (1 << 22) | (3 << 12) | 0
-
-            var layers: [String] = []
+            let layers: [String] = []
             
             var extensions = extensions + [
                 .getPhysicalDeviceProperties2Khr,
@@ -63,11 +62,6 @@ public final class Instance: SharedPointerStorage<VkInstance_T> {
                 extensions.insert(.externalFenceCapabilitiesKhr)
             #elseif os(Windows)
                 extensions.insert(.externalFenceCapabilitiesKhr)
-            #endif
-
-            #if DEBUG
-                layers.append("VK_LAYER_KHRONOS_validation")
-                extensions.insert(.debugUtilsExt)
             #endif
 
             let handle = try VkInstanceCreateInfo.lava {

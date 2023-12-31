@@ -240,17 +240,17 @@
 
     public typealias VkComponentTypeNV = CVulkan.VkComponentTypeNV
     public extension VkComponentTypeNV {
-        static let float16: VkComponentTypeNV = .VK_COMPONENT_TYPE_FLOAT16_NV
-        static let float32: VkComponentTypeNV = .VK_COMPONENT_TYPE_FLOAT32_NV
-        static let float64: VkComponentTypeNV = .VK_COMPONENT_TYPE_FLOAT64_NV
-        static let sint8: VkComponentTypeNV = .VK_COMPONENT_TYPE_SINT8_NV
-        static let sint16: VkComponentTypeNV = .VK_COMPONENT_TYPE_SINT16_NV
-        static let sint32: VkComponentTypeNV = .VK_COMPONENT_TYPE_SINT32_NV
-        static let sint64: VkComponentTypeNV = .VK_COMPONENT_TYPE_SINT64_NV
-        static let uint8: VkComponentTypeNV = .VK_COMPONENT_TYPE_UINT8_NV
-        static let uint16: VkComponentTypeNV = .VK_COMPONENT_TYPE_UINT16_NV
-        static let uint32: VkComponentTypeNV = .VK_COMPONENT_TYPE_UINT32_NV
-        static let uint64: VkComponentTypeNV = .VK_COMPONENT_TYPE_UINT64_NV
+        static let float16: VkComponentTypeNV = CVulkan.VK_COMPONENT_TYPE_FLOAT16_NV
+        static let float32: VkComponentTypeNV = CVulkan.VK_COMPONENT_TYPE_FLOAT32_NV
+        static let float64: VkComponentTypeNV = CVulkan.VK_COMPONENT_TYPE_FLOAT64_NV
+        static let sint8: VkComponentTypeNV = CVulkan.VK_COMPONENT_TYPE_SINT8_NV
+        static let sint16: VkComponentTypeNV = CVulkan.VK_COMPONENT_TYPE_SINT16_NV
+        static let sint32: VkComponentTypeNV = CVulkan.VK_COMPONENT_TYPE_SINT32_NV
+        static let sint64: VkComponentTypeNV = CVulkan.VK_COMPONENT_TYPE_SINT64_NV
+        static let uint8: VkComponentTypeNV = CVulkan.VK_COMPONENT_TYPE_UINT8_NV
+        static let uint16: VkComponentTypeNV = CVulkan.VK_COMPONENT_TYPE_UINT16_NV
+        static let uint32: VkComponentTypeNV = CVulkan.VK_COMPONENT_TYPE_UINT32_NV
+        static let uint64: VkComponentTypeNV = CVulkan.VK_COMPONENT_TYPE_UINT64_NV
     }
 
     public typealias VkConservativeRasterizationModeEXT = CVulkan.VkConservativeRasterizationModeEXT
@@ -1313,10 +1313,10 @@
 
     public typealias VkScopeNV = CVulkan.VkScopeNV
     public extension VkScopeNV {
-        static let device: VkScopeNV = .VK_SCOPE_DEVICE_NV
-        static let workgroup: VkScopeNV = .VK_SCOPE_WORKGROUP_NV
-        static let subgroup: VkScopeNV = .VK_SCOPE_SUBGROUP_NV
-        static let queueFamily: VkScopeNV = .VK_SCOPE_QUEUE_FAMILY_NV
+        static let device: VkScopeNV = CVulkan.VK_SCOPE_DEVICE_NV
+        static let workgroup: VkScopeNV = CVulkan.VK_SCOPE_WORKGROUP_NV
+        static let subgroup: VkScopeNV = CVulkan.VK_SCOPE_SUBGROUP_NV
+        static let queueFamily: VkScopeNV = CVulkan.VK_SCOPE_QUEUE_FAMILY_NV
     }
 
     public typealias VkSemaphoreType = CVulkan.VkSemaphoreType

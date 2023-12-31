@@ -87,6 +87,7 @@ open class Label: View {
         layout.font = font
         layout.layout.alignment = .center
         layout.layout.ellipsize = .none
+        layout.layout.wrap = .word
     }
 
     open override var frame: CGRect {

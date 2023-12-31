@@ -21,6 +21,13 @@ public enum TextAlignment: Int {
     case center
 }
 
+public enum EllipsizeMode: Int {
+    case none
+    case start
+    case middle
+    case end
+}
+
 open class Label: View {
     open var text: String? = nil {
         didSet {
@@ -55,6 +62,17 @@ open class Label: View {
         }
     }
 
+    open var ellipsizeMode: EllipsizeMode = .none {
+        didSet {
+            switch ellipsizeMode {
+                case .none: layout.layout.ellipsize = .none
+                case .start: layout.layout.ellipsize = .start
+                case .middle: layout.layout.ellipsize = .middle
+                case .end: layout.layout.ellipsize = .end
+            }
+        }
+    }
+
     internal var layout = LabelTextLayout()
 
     // MARK: - Initialization
@@ -68,6 +86,7 @@ open class Label: View {
         layout.textColor = textColor
         layout.font = font
         layout.layout.alignment = .center
+        layout.layout.ellipsize = .none
     }
 
     open override var frame: CGRect {

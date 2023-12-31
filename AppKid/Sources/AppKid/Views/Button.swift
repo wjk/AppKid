@@ -42,6 +42,8 @@ open class Button: Control {
         labelFrame = labelFrame.insetBy(dx: 8.0, dy: 8.0)
         let titleLabel = Label(frame: labelFrame)
         titleLabel.backgroundColor = .clear
+        titleLabel.textAlignment = .center
+        titleLabel.ellipsizeMode = .end
 
         self.titleLabel = titleLabel
 

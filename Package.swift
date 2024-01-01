@@ -86,22 +86,22 @@ let package = Package(
     products: [
         .executable(name: "AppKidDemo", targets: ["AppKidDemo"]),
         
-        .library(.appKid, type: .dynamic),
+        .library(.appKid),
 
         .library(.cCairo),
         .library(.cPango),
-        .library(.cairoGraphics, type: .dynamic),
+        .library(.cairoGraphics),
         .library("STBImage", [.stbImageRead, .stbImageWrite, .stbImageResize], type: .static),
         .library(.stbImageRead, type: .static),
         .library(.stbImageWrite, type: .static),
         .library(.stbImageResize, type: .static),
 
-        .library(.contentAnimation, type: .dynamic),
+        .library(.contentAnimation),
 
-        .library(.simpleGLM, type: .dynamic),
+        .library(.simpleGLM),
 
         .library(.cXlib),
-        .library(.swiftXlib, type: .dynamic),
+        .library(.swiftXlib),
 
         // .library(.cGLib),
         // .library(.swiftyGLib, type: .dynamic),
@@ -111,7 +111,7 @@ let package = Package(
         .library(.tinyFoundation),
 
         .library(.cVulkan, type: .static),
-        .library(.volcano, type: .dynamic),
+        .library(.volcano),
         .library(.vulkanMemoryAllocatorAdapted, type: .static),
     ] + {
         guard Vulkan.version != nil else { return [] }
